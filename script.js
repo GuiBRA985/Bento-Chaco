@@ -1,12 +1,38 @@
-const galleries=[
-  ["aves","01","Aves","Birds","Cores, cantos e movimentos que atravessam o céu do Pantanal."],
-  ["mamiferos","02","Mamíferos","Mammals","Da onça-pintada à ariranha: encontros que ficam para sempre."],
-  ["repteis","03","Répteis","Reptiles","Habitantes antigos das águas, campos e matas pantaneiras."],
-  ["anfibios","04","Anfíbios","Amphibians","Pequenas vidas que anunciam a chuva e revelam a saúde do ambiente."],
-  ["invertebrados","05","Borboletas e outros invertebrados","Butterflies & invertebrates","Um universo delicado, quase invisível, sustentando toda a paisagem."],
-  ["plantas","06","Plantas","Plants","Flores, frutos e árvores que contam as estações do Pantanal."]
+const galleryData = [
+  {id:"aves",number:"01",pt:["Aves","Aves","Cores, cantos e movimentos que atravessam o céu do Pantanal."],en:["Birds","Birds","Colors, calls and movement crossing the Pantanal sky."]},
+  {id:"mamiferos",number:"02",pt:["Mamíferos","Mamíferos","Da onça-pintada à ariranha: encontros que ficam para sempre."],en:["Mammals","Mammals","From jaguars to giant otters: encounters that stay with you forever."]},
+  {id:"repteis",number:"03",pt:["Répteis","Répteis","Habitantes antigos das águas, campos e matas pantaneiras."],en:["Reptiles","Reptiles","Ancient inhabitants of the Pantanal waters, grasslands and forests."]},
+  {id:"anfibios",number:"04",pt:["Anfíbios","Anfíbios","Pequenas vidas que anunciam a chuva e revelam a saúde do ambiente."],en:["Amphibians","Amphibians","Small lives that announce the rain and reveal the health of the environment."]},
+  {id:"invertebrados",number:"05",pt:["Borboletas e outros invertebrados","Borboletas e outros invertebrados","Um universo delicado, quase invisível, sustentando toda a paisagem."],en:["Butterflies & other invertebrates","Butterflies & other invertebrates","A delicate, almost invisible universe supporting the entire landscape."]},
+  {id:"plantas",number:"06",pt:["Plantas","Plantas","Flores, frutos e árvores que contam as estações do Pantanal."],en:["Plants","Plants","Flowers, fruits and trees that tell the story of the Pantanal seasons."]}
 ];
-const slot=(id,title,n)=>`<figure class="image-slot photo photo-${n}"><div class="slot-copy"><span>ARQUIVO DA IMAGEM</span><strong>assets/${id}-0${n}.jpg</strong></div><img src="assets/${id}-0${n}.jpg" alt="${title} — fotografia ${n}" onload="this.parentElement.classList.add('has-image')" onerror="this.style.display='none'"></figure>`;
-document.querySelector("#gallery-root").innerHTML=galleries.map(([id,number,title,subtitle,intro],index)=>`<section class="gallery" id="${id}"><div class="gallery-heading"><span class="gallery-number">${number}</span><div><p>${subtitle}</p><h2>${title}</h2></div><p class="gallery-intro-copy">${intro}</p></div><div class="gallery-grid layout-${index%3}">${[1,2,3,4].map(n=>slot(id,title,n)).join("")}</div></section>`).join("");
-const whatsappIcon=document.querySelector(".floating-whatsapp svg");
-if(whatsappIcon){whatsappIcon.style.width="29px";whatsappIcon.style.height="29px";whatsappIcon.style.color="#fff";}
+
+const copy = {
+  pt:{lang:"PT",menu:["Sobre","Galerias","Contato"],eyebrow:"GUIA DE VIDA SELVAGEM · PANTANAL, BRASIL",hero:"O Pantanal<br>sem distância.",whatsapp:"Falar no WhatsApp",instagram:"Instagram",registered:"GUIA REGISTRADO",aboutKicker:"CONHEÇA SEU GUIA",aboutTitle:"Experiência de campo.<br>Olhar de quem pertence.",about1:"Tchaco Pantaneiro conduz experiências de observação de fauna no Pantanal, unindo conhecimento local, leitura da paisagem e respeito absoluto pela vida selvagem.",about2:"Guia de turismo registrado no CADASTUR, acompanha viajantes em busca dos encontros que só o Pantanal sabe oferecer.",archive:"ARQUIVO DE CAMPO",archiveTitle:"Vida em todas<br>as suas formas.",archiveIntro:"Galerias organizadas por grandes grupos da biodiversidade pantaneira.",contactKicker:"VIVA O PANTANAL",contactTitle:"O próximo encontro<br>começa aqui.",contactIntro:"Entre em contato diretamente com Tchaco Pantaneiro.",footer:"Guia registrado · CADASTUR · Pantanal, Brasil",image:"ARQUIVO DA IMAGEM"},
+  en:{lang:"EN",menu:["About","Galleries","Contact"],eyebrow:"WILDLIFE GUIDE · PANTANAL, BRAZIL",hero:"The Pantanal.<br>Up close.",whatsapp:"Message on WhatsApp",instagram:"Instagram",registered:"REGISTERED GUIDE",aboutKicker:"MEET YOUR GUIDE",aboutTitle:"Field experience.<br>The eye of a local.",about1:"Tchaco Pantaneiro leads wildlife-watching experiences in the Pantanal, combining local knowledge, an expert reading of the landscape and absolute respect for wildlife.",about2:"A licensed Brazilian tour guide registered with CADASTUR, he accompanies travelers in search of the encounters only the Pantanal can offer.",archive:"FIELD ARCHIVE",archiveTitle:"Life in all<br>its forms.",archiveIntro:"Galleries organized by the major groups of Pantanal biodiversity.",contactKicker:"EXPERIENCE THE PANTANAL",contactTitle:"Your next encounter<br>starts here.",contactIntro:"Contact Tchaco Pantaneiro directly.",footer:"Registered guide · CADASTUR · Pantanal, Brazil",image:"IMAGE FILE"}
+};
+
+const slot=(id,title,n,lang)=>`<figure class="image-slot photo photo-${n}"><div class="slot-copy"><span>${copy[lang].image}</span><strong>assets/${id}-0${n}.jpg</strong></div><img src="assets/${id}-0${n}.jpg" alt="${title} — ${lang==='pt'?'fotografia':'photograph'} ${n}" onload="this.parentElement.classList.add('has-image')" onerror="this.style.display='none'"></figure>`;
+
+function renderGalleries(lang){
+  document.querySelector("#gallery-root").innerHTML=galleryData.map((g,index)=>{const [title,subtitle,intro]=g[lang];return `<section class="gallery" id="${g.id}"><div class="gallery-heading"><span class="gallery-number">${g.number}</span><div><p>${subtitle}</p><h2>${title}</h2></div><p class="gallery-intro-copy">${intro}</p></div><div class="gallery-grid layout-${index%3}">${[1,2,3,4].map(n=>slot(g.id,title,n,lang)).join("")}</div></section>`}).join("");
+}
+
+function setLanguage(lang){
+  const c=copy[lang]; document.documentElement.lang=lang==='pt'?'pt-BR':'en'; localStorage.setItem('tchaco-language',lang);
+  document.querySelectorAll('.navlinks a').forEach((el,i)=>el.textContent=c.menu[i]);
+  document.querySelector('.eyebrow').textContent=c.eyebrow; document.querySelector('.hero-copy h1').innerHTML=c.hero;
+  const heroButtons=document.querySelectorAll('.hero-actions .button'); heroButtons[0].textContent=c.whatsapp; heroButtons[1].textContent=c.instagram;
+  document.querySelector('.cadastur-badge span').textContent=c.registered;
+  const about=document.querySelector('.about-copy'); about.querySelector('.section-kicker').textContent=c.aboutKicker; about.querySelector('h2').innerHTML=c.aboutTitle; const aboutP=about.querySelectorAll(':scope > p:not(.section-kicker)'); aboutP[0].textContent=c.about1; aboutP[1].textContent=c.about2;
+  const intro=document.querySelector('.gallery-intro'); intro.querySelector('.section-kicker').textContent=c.archive; intro.querySelector('h2').innerHTML=c.archiveTitle; intro.querySelector('p:last-child').textContent=c.archiveIntro;
+  const contact=document.querySelector('.contact'); contact.querySelector('.section-kicker').textContent=c.contactKicker; contact.querySelector('h2').innerHTML=c.contactTitle; contact.querySelector('p:not(.section-kicker)').textContent=c.contactIntro;
+  document.querySelector('footer > p:nth-of-type(1)').textContent=c.footer; document.querySelector('.language-toggle').textContent=lang==='pt'?'EN':'PT'; document.querySelector('.language-toggle').setAttribute('aria-label',lang==='pt'?'View in English':'Ver em português');
+  document.querySelectorAll('.slot-copy span').forEach(el=>el.textContent=c.image); renderGalleries(lang);
+}
+
+const languageButton=document.createElement('button'); languageButton.className='language-toggle'; languageButton.type='button'; document.querySelector('.topbar').appendChild(languageButton);
+const style=document.createElement('style'); style.textContent='.language-toggle{border:1px solid rgba(255,255,255,.45);background:rgba(10,11,9,.35);color:#fff;min-width:48px;height:38px;padding:0 12px;font:700 .72rem Arial;letter-spacing:.12em;cursor:pointer}.language-toggle:hover{background:#b99858;color:#0a0b09;border-color:#b99858}@media(max-width:800px){.language-toggle{margin-left:auto}}'; document.head.appendChild(style);
+let currentLanguage=localStorage.getItem('tchaco-language')==='en'?'en':'pt'; languageButton.addEventListener('click',()=>{currentLanguage=currentLanguage==='pt'?'en':'pt';setLanguage(currentLanguage)});
+const whatsappIcon=document.querySelector('.floating-whatsapp svg'); if(whatsappIcon){whatsappIcon.style.width='29px';whatsappIcon.style.height='29px';whatsappIcon.style.color='#fff'}
+setLanguage(currentLanguage);
