@@ -8,3 +8,5 @@ const galleries=[
 ];
 const slot=(id,title,n)=>`<figure class="image-slot photo photo-${n}"><div class="slot-copy"><span>ARQUIVO DA IMAGEM</span><strong>assets/${id}-0${n}.jpg</strong></div><img src="assets/${id}-0${n}.jpg" alt="${title} — fotografia ${n}" onload="this.parentElement.classList.add('has-image')" onerror="this.style.display='none'"></figure>`;
 document.querySelector("#gallery-root").innerHTML=galleries.map(([id,number,title,subtitle,intro],index)=>`<section class="gallery" id="${id}"><div class="gallery-heading"><span class="gallery-number">${number}</span><div><p>${subtitle}</p><h2>${title}</h2></div><p class="gallery-intro-copy">${intro}</p></div><div class="gallery-grid layout-${index%3}">${[1,2,3,4].map(n=>slot(id,title,n)).join("")}</div></section>`).join("");
+const whatsappIcon=document.querySelector(".floating-whatsapp svg");
+if(whatsappIcon){whatsappIcon.style.width="29px";whatsappIcon.style.height="29px";whatsappIcon.style.color="#fff";}
