@@ -37,3 +37,16 @@ Todas as galerias usam o mesmo padrão de quatro imagens.
 - Qualidade: 75 a 85%.
 - Tente manter cada arquivo abaixo de 700 KB.
 - Não altere os nomes. Ao subir a imagem correta, o espaço vazio é substituído automaticamente.
+
+## Organização do site
+
+A página inicial mostra o vídeo de cada classe e um botão para a galeria completa. Cada galeria possui sua própria pasta e endereço:
+
+- `/aves/`
+- `/mamiferos/`
+- `/repteis/`
+- `/anfibios/`
+- `/invertebrados/`
+- `/plantas/`
+
+Na galeria de Mamíferos são usadas as fotografias `mamiferos-02.jpg` até `mamiferos-10.jpg`. Nas demais galerias são usadas as fotografias `02`, `03` e `04`.
