@@ -23,7 +23,7 @@ Todas as galerias usam o mesmo padrão de quatro imagens.
 ### Nomes dos arquivos
 
 - Aves: `aves-01.mp4`, depois `aves-02.jpg` até `aves-04.jpg`
-- Mamíferos: `mamiferos-01.mp4`, depois `mamiferos-02.jpg` até `mamiferos-04.jpg`
+- Mamíferos: `mamiferos-01.mp4`, depois `mamiferos-02.jpg` até `mamiferos-10.jpg`
 - Répteis: `repteis-01.mp4`, depois `repteis-02.jpg` até `repteis-04.jpg`
 - Anfíbios: `anfibios-01.mp4`, depois `anfibios-02.jpg` até `anfibios-04.jpg`
 - Borboletas e outros invertebrados: `invertebrados-01.mp4`, depois `invertebrados-02.jpg` até `invertebrados-04.jpg`
