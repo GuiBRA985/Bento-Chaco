@@ -11,23 +11,21 @@ Coloque todas as imagens dentro da pasta `public/assets`. Os nomes precisam ser 
 
 ## Galerias
 
-Todas as galerias usam o mesmo padrão de quatro imagens.
+Cada classe usa um vídeo na página inicial e dez fotografias na página interna.
 
 | Posição | Arquivos terminados em | Tamanho recomendado | Proporção |
 |---|---|---:|---:|
 | Vídeo 1 | `-01.mp4` | 478 × 850 px | Vertical |
-| Imagem 2 | `-02.jpg` | 1400 × 1000 px | 7:5 |
-| Imagem 3 | `-03.jpg` | 1400 × 1000 px | 7:5 |
-| Imagem 4 | `-04.jpg` | 2000 × 1100 px | 20:11 |
+| Fotografias da galeria | `-02.jpg` até `-11.jpg` | 1600 × 1200 px | 4:3 |
 
 ### Nomes dos arquivos
 
-- Aves: `aves-01.mp4`, depois `aves-02.jpg` até `aves-04.jpg`
-- Mamíferos: `mamiferos-01.mp4`, depois `mamiferos-02.jpg` até `mamiferos-10.jpg`
-- Répteis: `repteis-01.mp4`, depois `repteis-02.jpg` até `repteis-04.jpg`
-- Anfíbios: `anfibios-01.mp4`, depois `anfibios-02.jpg` até `anfibios-04.jpg`
-- Borboletas e outros invertebrados: `invertebrados-01.mp4`, depois `invertebrados-02.jpg` até `invertebrados-04.jpg`
-- Plantas: `plantas-01.mp4`, depois `plantas-02.jpg` até `plantas-04.jpg`
+- Aves: `aves-01.mp4`, depois `aves-02.jpg` até `aves-11.jpg`
+- Mamíferos: `mamiferos-01.mp4`, depois `mamiferos-02.jpg` até `mamiferos-11.jpg`
+- Répteis: `repteis-01.mp4`, depois `repteis-02.jpg` até `repteis-11.jpg`
+- Anfíbios: `anfibios-01.mp4`, depois `anfibios-02.jpg` até `anfibios-11.jpg`
+- Borboletas e outros invertebrados: `invertebrados-01.mp4`, depois `invertebrados-02.jpg` até `invertebrados-11.jpg`
+- Plantas: `plantas-01.mp4`, depois `plantas-02.jpg` até `plantas-11.jpg`
 
 ## Exportação no Photoshop
 
@@ -49,4 +47,6 @@ A página inicial mostra o vídeo de cada classe e um botão para a galeria comp
 - `/invertebrados/`
 - `/plantas/`
 
-Na galeria de Mamíferos são usadas as fotografias `mamiferos-02.jpg` até `mamiferos-10.jpg`. Nas demais galerias são usadas as fotografias `02`, `03` e `04`.
+Cada página interna usa dez fotografias, numeradas de `02` até `11`. Exemplos: `aves-02.jpg` até `aves-11.jpg` e `mamiferos-02.jpg` até `mamiferos-11.jpg`.
+
+Todas aparecem no mesmo formato horizontal 4:3. Para evitar cortes excessivos, recomenda-se preparar cada fotografia em 1600 × 1200 px.
