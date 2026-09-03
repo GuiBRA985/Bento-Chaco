@@ -1,6 +1,6 @@
 const data={
   aves:{photos:20,pt:['Aves','Cores, cantos e movimentos que atravessam o céu do Pantanal.'],en:['Birds','Colors, calls and movement crossing the Pantanal sky.']},
-  mamiferos:{photos:9,pt:['Mamíferos','Da onça-pintada à ariranha: encontros que ficam para sempre.'],en:['Mammals','From jaguars to giant otters: encounters that stay with you forever.']},
+  mamiferos:{photos:15,pt:['Mamíferos','Da onça-pintada à ariranha: encontros que ficam para sempre.'],en:['Mammals','From jaguars to giant otters: encounters that stay with you forever.']},
   repteis:{photos:9,pt:['Répteis','Habitantes antigos das águas, campos e matas pantaneiras.'],en:['Reptiles','Ancient inhabitants of the Pantanal waters, grasslands and forests.']},
   anfibios:{photos:9,pt:['Anfíbios','Pequenas vidas que anunciam a chuva e revelam a saúde do ambiente.'],en:['Amphibians','Small lives that announce the rain and reveal the health of the environment.']},
   invertebrados:{photos:9,pt:['Borboletas e outros invertebrados','Um universo delicado, quase invisível, sustentando toda a paisagem.'],en:['Butterflies & other invertebrates','A delicate, almost invisible universe supporting the entire landscape.']},
