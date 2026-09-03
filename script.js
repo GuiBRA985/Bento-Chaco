@@ -4,7 +4,7 @@ const classes = [
   {id:'repteis',pt:['Répteis','Habitantes antigos das águas, campos e matas pantaneiras.'],en:['Reptiles','Ancient inhabitants of the Pantanal waters, grasslands and forests.']},
   {id:'primatas',pt:['Primatas','Inteligência, agilidade e vida entre as copas do Pantanal.'],en:['Primates','Intelligence, agility and life among the Pantanal treetops.']}
 ];
-const INSTAGRAM_FOLLOWERS='0';
+const INSTAGRAM_FOLLOWERS='98 mil';
 const socialCopy={
   pt:{followers:'seguidores no Instagram',like:'Curtir',liked:'Curtido'},
   en:{followers:'Instagram followers',like:'Like',liked:'Liked'}
