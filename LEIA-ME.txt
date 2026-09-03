@@ -1,0 +1,34 @@
+GALERIA DE PRIMATAS
+
+ARQUIVOS QUE DEVEM SER SUBSTITUÍDOS NA RAIZ DO REPOSITÓRIO
+
+1. script.js
+2. gallery-page.js
+
+PASTA NOVA NA RAIZ DO REPOSITÓRIO
+
+3. Crie a pasta primatas na raiz do repositório.
+4. Coloque dentro dela o arquivo primatas/index.html deste pacote.
+
+A pasta primatas fica na raiz, ao lado das pastas aves, mamiferos e repteis.
+Ela não fica dentro de assets.
+
+ARQUIVOS DE MÍDIA QUE VOCÊ DEVE CRIAR E COLOCAR EM ASSETS
+
+assets/primatas-01.mp4   vídeo de abertura, recomendado: 478 x 850 px
+assets/primatas-02.jpg   primeira foto
+assets/primatas-03.jpg   segunda foto
+assets/primatas-04.jpg   terceira foto
+
+As três fotos aparecem em espaços iguais no formato 4:3.
+Tamanho recomendado para cada foto: 1200 x 900 px.
+
+Não é necessário alterar index.html, styles.css ou gallery-page.css.
+
+ATENÇÃO AO CONTADOR DO INSTAGRAM
+
+O script.js deste pacote mantém o contador como:
+
+const INSTAGRAM_FOLLOWERS='0';
+
+Se você já colocou outro número no site, altere novamente essa linha antes de publicar.
