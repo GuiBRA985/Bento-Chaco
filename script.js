@@ -1,10 +1,7 @@
 const classes = [
   {id:'aves',pt:['Aves','Cores, cantos e movimentos que atravessam o céu do Pantanal.'],en:['Birds','Colors, calls and movement crossing the Pantanal sky.']},
   {id:'mamiferos',pt:['Mamíferos','Da onça-pintada à ariranha: encontros que ficam para sempre.'],en:['Mammals','From jaguars to giant otters: encounters that stay with you forever.']},
-  {id:'repteis',pt:['Répteis','Habitantes antigos das águas, campos e matas pantaneiras.'],en:['Reptiles','Ancient inhabitants of the Pantanal waters, grasslands and forests.']},
-  {id:'anfibios',pt:['Anfíbios','Pequenas vidas que anunciam a chuva e revelam a saúde do ambiente.'],en:['Amphibians','Small lives that announce the rain and reveal the health of the environment.']},
-  {id:'invertebrados',pt:['Borboletas e outros invertebrados','Um universo delicado, quase invisível, sustentando toda a paisagem.'],en:['Butterflies & other invertebrates','A delicate, almost invisible universe supporting the entire landscape.']},
-  {id:'plantas',pt:['Plantas','Flores, frutos e árvores que contam as estações do Pantanal.'],en:['Plants','Flowers, fruits and trees that tell the story of the Pantanal seasons.']}
+  {id:'repteis',pt:['Répteis','Habitantes antigos das águas, campos e matas pantaneiras.'],en:['Reptiles','Ancient inhabitants of the Pantanal waters, grasslands and forests.']}
 ];
 const copy={
   pt:{menu:['Sobre','Galerias','Contato'],eyebrow:'GUIA DE VIDA SELVAGEM · PANTANAL, BRASIL',hero:'O Pantanal<br>sem distância.',whatsapp:'Falar no WhatsApp',registered:'GUIA REGISTRADO',aboutKicker:'CONHEÇA SEU GUIA',aboutTitle:'Experiência de campo.<br>Olhar de quem pertence.',about1:'Tchaco Pantaneiro conduz experiências de observação de fauna no Pantanal, unindo conhecimento local, leitura da paisagem e respeito absoluto pela vida selvagem.',about2:'Guia de turismo registrado no CADASTUR, acompanha viajantes em busca dos encontros que só o Pantanal sabe oferecer.',archive:'ARQUIVO DE CAMPO',archiveTitle:'Conheça o Pantanal.',archiveIntro:'Escolha uma classe para abrir sua galeria completa.',contactKicker:'VIVA O PANTANAL',contactTitle:'O próximo encontro<br>começa aqui.',contactIntro:'Entre em contato diretamente com Tchaco Pantaneiro.',footer:'Guia registrado · CADASTUR · Pantanal, Brasil',video:'ARQUIVO DO VÍDEO',open:'Ver galeria completa'},
