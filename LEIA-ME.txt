@@ -1,20 +1,9 @@
-NOVA GALERIA — ONÇA-PINTADA / JAGUAR
+AJUSTE DA EXIBIÇÃO NO COMPUTADOR
 
-Envie para o repositório todos os arquivos deste pacote, mantendo a pasta onca-pintada.
+Substitua somente o arquivo script.js da raiz do repositório.
 
-Arquivos existentes que devem ser substituídos:
-- script.js
-- gallery-page.js
-- README.md
-- GUIA-DE-IMAGENS.md
+No computador, as cinco galerias passam a ser exibidas assim:
+- primeira linha: três galerias;
+- segunda linha: duas galerias centralizadas.
 
-Pasta nova que deve ser enviada completa:
-- onca-pintada/index.html
-
-Depois, coloque estes arquivos de mídia dentro da pasta assets do site:
-- onca-pintada-01.mp4 — vídeo vertical recomendado em 478 × 850 px
-- onca-pintada-02.jpg — fotografia em 1600 × 1200 px
-- onca-pintada-03.jpg — fotografia em 1600 × 1200 px
-- onca-pintada-04.jpg — fotografia em 1600 × 1200 px
-
-O nome aparece como Onça-Pintada em português e Jaguar em inglês.
+A visualização no celular permanece inalterada.
