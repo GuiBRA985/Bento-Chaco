@@ -9,4 +9,4 @@ Site pronto para GitHub Pages.
 
 Enquanto uma fotografia não existir, o site mostra o nome do arquivo esperado. Depois que ela for enviada, aparece automaticamente.
 
-As pastas `aves`, `mamiferos`, `repteis`, `anfibios`, `invertebrados` e `plantas` são páginas internas. Envie essas pastas completas para o repositório; não coloque somente os arquivos soltos da raiz.
+As pastas `aves`, `mamiferos`, `repteis`, `primatas` e `onca-pintada` são páginas internas. Envie essas pastas completas para o repositório; não coloque somente os arquivos soltos da raiz.
