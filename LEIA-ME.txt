@@ -1,9 +1,14 @@
-AJUSTE DA EXIBIÇÃO NO COMPUTADOR
+ALTERAÇÃO — APRESENTAÇÃO DO GUIA E MENU
 
-Substitua somente o arquivo script.js da raiz do repositório.
+Substitua estes três arquivos na raiz do repositório:
+- index.html
+- script.js
+- styles.css
 
-No computador, as cinco galerias passam a ser exibidas assim:
-- primeira linha: três galerias;
-- segunda linha: duas galerias centralizadas.
+O texto de apresentação foi atualizado em português e inglês.
+Os botões Sobre, Galerias e Contato ficaram maiores, mais visíveis e com tipografia semelhante à marca.
 
-A visualização no celular permanece inalterada.
+PARA ALTERAR ESSE TEXTO NOVAMENTE:
+- Português: edite about1 e about2 dentro de copy.pt no arquivo script.js.
+- Inglês: edite about1 e about2 dentro de copy.en no arquivo script.js.
+- Atualize também os dois parágrafos da seção id="sobre" no index.html, que funcionam como conteúdo inicial antes do JavaScript carregar.
