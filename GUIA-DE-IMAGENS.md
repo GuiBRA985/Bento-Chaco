@@ -11,7 +11,7 @@ Coloque todas as imagens dentro da pasta `assets`. Os nomes precisam ser exatame
 
 ## Galerias
 
-Cada galeria usa um vídeo na página inicial. Aves, Mamíferos e Répteis têm nove fotografias; Primatas e Onça-Pintada começam com três.
+Cada galeria usa um vídeo na página inicial. Aves, Mamíferos e Répteis têm nove fotografias; Primatas tem quatro e Onça-Pintada começa com três.
 
 | Posição | Arquivos terminados em | Tamanho recomendado | Proporção |
 |---|---|---:|---:|
@@ -23,7 +23,7 @@ Cada galeria usa um vídeo na página inicial. Aves, Mamíferos e Répteis têm 
 - Aves: `aves-01.mp4`, depois `aves-02.jpg` até `aves-10.jpg`
 - Mamíferos: `mamiferos-01.mp4`, depois `mamiferos-02.jpg` até `mamiferos-10.jpg`
 - Répteis: `repteis-01.mp4`, depois `repteis-02.jpg` até `repteis-10.jpg`
-- Primatas: `primatas-01.mp4`, depois `primatas-02.jpg` até `primatas-04.jpg`
+- Primatas: `primatas-01.mp4`, depois `primatas-02.jpg` até `primatas-05.jpg`
 - Onça-Pintada: `onca-pintada-01.mp4`, depois `onca-pintada-02.jpg` até `onca-pintada-04.jpg`
 
 ## Exportação no Photoshop
@@ -45,6 +45,6 @@ A página inicial mostra o vídeo de cada classe e um botão para a galeria comp
 - `/primatas/`
 - `/onca-pintada/`
 
-Aves, Mamíferos e Répteis usam nove fotografias, numeradas de `02` até `10`. Primatas e Onça-Pintada usam três fotografias, numeradas de `02` até `04`.
+Aves, Mamíferos e Répteis usam nove fotografias, numeradas de `02` até `10`. Primatas usa quatro fotografias, numeradas de `02` até `05`. Onça-Pintada usa três fotografias, numeradas de `02` até `04`.
 
 Todas aparecem no mesmo formato horizontal 4:3. Para evitar cortes excessivos, recomenda-se preparar cada fotografia em 1600 × 1200 px.

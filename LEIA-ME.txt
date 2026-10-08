@@ -1,14 +1,12 @@
-ALTERAÇÃO — APRESENTAÇÃO DO GUIA E MENU
+NOVA FOTO NA GALERIA DE PRIMATAS
 
-Substitua estes três arquivos na raiz do repositório:
-- index.html
-- script.js
-- styles.css
+Substitua na raiz do repositório:
+- gallery-page.js
+- GUIA-DE-IMAGENS.md
 
-O texto de apresentação foi atualizado em português e inglês.
-Os botões Sobre, Galerias e Contato ficaram maiores, mais visíveis e com tipografia semelhante à marca.
+Depois envie a nova fotografia para a pasta assets com este nome exato:
+- primatas-05.jpg
 
-PARA ALTERAR ESSE TEXTO NOVAMENTE:
-- Português: edite about1 e about2 dentro de copy.pt no arquivo script.js.
-- Inglês: edite about1 e about2 dentro de copy.en no arquivo script.js.
-- Atualize também os dois parágrafos da seção id="sobre" no index.html, que funcionam como conteúdo inicial antes do JavaScript carregar.
+Tamanho recomendado: 1600 × 1200 px, proporção horizontal 4:3.
+
+Nenhum outro arquivo do site precisa ser substituído.
